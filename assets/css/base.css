@@ -413,6 +413,7 @@ button {
 .scf-contact {
   width: 100%;
   align-items: flex-start;
+  row-gap: var(--mb-0-25);
 }
 
 .scf-contact a {

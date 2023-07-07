@@ -32,11 +32,11 @@
           <h3>AfrikoHub</h3>
         </div>
 
-        <div class="flex-center sc-content">
+        <div class="flex-center sc-content" data-aos="fade-left">
           <h1>Something exciting is coming soon!</h1>
         </div>
 
-        <div class="flex-center sc-img">
+        <div class="flex-center sc-img" data-aos="fade-up" data-aos-delay="300">
           <div
             class="carousel fade responsive"
             style="overflow: hidden; display: none; max-height: 0px"
@@ -75,7 +75,11 @@
           </div>
         </div>
 
-        <div class="flex-center sc-footer">
+        <div
+          class="flex-center sc-footer"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
           <div class="flex-center flex-col scf">
             <p>We will be launching our site very soon.</p>
             <p>In the mean time, follow us on:</p>
@@ -103,8 +107,20 @@
           </div>
         </div>
 
-        <div class="sc-svg"></div>
+        <div class="sc-svg" data-aos="fade-down" data-aos-delay="400"></div>
       </div>
     </section>
+
+    <!-- ===== AOS (Animate On Scroll) =====-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        anchor: "top center",
+      });
+
+      window.addEventListener("load", AOS.refresh);
+      ("");
+    </script>
   </body>
 </html>
